@@ -333,10 +333,6 @@ footer {
 }
 
 @media (max-width: 991px) {
-  .lokacija-box {
-    flex-wrap: wrap;
-    gap: 45px;
-  }
   .logo img {
     height: 160px;
     width: auto;
@@ -483,5 +479,11 @@ button:disabled {
   .map-container:hover .gesture-overlay,
   .gesture-overlay {
     pointer-events: auto;
+  }
+}
+@media (max-width: 600px) {
+  .lokacija-box {
+    grid-template-columns: 1fr;
+    gap: 45px;
   }
 }
